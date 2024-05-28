@@ -34,3 +34,16 @@ Go to the PHP folder and run this command:
 ```bash
 php -S 0.0.0.0:80
 ```
+
+## Log all queries in MySQL
+
+```
+SET global log_output = 'FILE';
+SET global general_log_file='/tmp/mysql_general.log';
+SET global general_log = 1;
+```
+
+See logs as a live
+
+```
+tail -f /tmp/mysql_general.log
