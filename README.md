@@ -35,7 +35,7 @@ Go to the PHP folder and run this command:
 php -S 0.0.0.0:80
 ```
 
-## Log all queries in MySQL
+## Log all queries in MySQL ( Bonus )
 
 ```
 SET global log_output = 'FILE';
@@ -43,7 +43,7 @@ SET global general_log_file='/tmp/mysql_general.log';
 SET global general_log = 1;
 ```
 
-See logs as a live
+See logs as live
 
 ```
 tail -f /tmp/mysql_general.log
